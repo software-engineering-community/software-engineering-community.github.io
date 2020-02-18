@@ -49,7 +49,7 @@
 	// jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
         $.ajax({
-            url: "https://api.meetup.com/cpp-ug-dresden/events",
+            url: "https://api.meetup.com/Software-Engineering-Community/events",
             jsonp: "callback",
             dataType: "jsonp",
             data: {
