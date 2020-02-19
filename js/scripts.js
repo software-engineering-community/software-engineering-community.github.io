@@ -4,7 +4,6 @@
    Description: Custom JS file
 */
 
-
 (function($) {
     "use strict";
 
@@ -48,6 +47,8 @@
 
 	// jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
+
+	    // load all our events, first fetch from meetup.com and then append events from local file ../addevents.json
         $.ajax({
             url: "https://api.meetup.com/Software-Engineering-Community/events",
             jsonp: "callback",
@@ -56,12 +57,16 @@
               format: "json"
             },
             success: function(response) {
-              var events = response.data;
-              console.log(events)
-              loadEvents(events)
+                var events = response.data;
+                fetch("../addevents.json")
+                    .then(response => response.json())
+                    .then(addevents => {
+                        events = events.concat(addevents);
+                        events.sort((a, b) => (a.local_date > b.local_date) ? 1 : ((b.local_date > a.local_date) ? -1 : 0));
+                        loadEvents(events);
+                    });
             }
-          });
-
+        });
 
 		$(document).on('click', 'a.page-scroll', function(event) {
 			var $anchor = $(this);
