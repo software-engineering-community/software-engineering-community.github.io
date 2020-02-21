@@ -1,0 +1,4 @@
+[
+  {"status": "past", "local_date": "2019-05-21", "local_time": "12:00", "link": "https://devday.de/dev-day-2019/", "name": "DevDay 2019"},
+  {"status": "upcoming", "local_date": "2020-05-05", "local_time": "12:00", "link": "https://devday.de", "name": "DevDay 2020"}
+]
