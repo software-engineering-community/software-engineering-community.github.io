@@ -1,5 +1,5 @@
 [
   {"status": "past", "local_date": "2019-05-21", "local_time": "12:00", "link": "https://devday.de/devday19/sessions/", "name": "Dev Day 2019"},
-  {"status": "past", "local_date": "2020-05-05", "local_time": "12:00", "link": "https://devday.de/devday20/sessions/", "name": "Dev Day 2020"}
+  {"status": "past", "local_date": "2020-05-05", "local_time": "12:00", "link": "https://devday.de/devday20/sessions/", "name": "Dev Day 2020"},
   {"status": "upcoming", "local_date": "2021-04-20", "local_time": "12:00", "link": "https://devday.de", "name": "Dev Day 2021"}
 ]
