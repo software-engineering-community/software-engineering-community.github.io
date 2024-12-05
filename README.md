@@ -2,7 +2,7 @@
 title: SECO Website
 ---
 
-This is the SECO (Software Engineering Community) Website repository. Content
+This is the SECO (Software/System Engineering Community) Website repository. Content
 from this repository is published to https://seco.rocks/ automatically.
 
 # add a manual event
